@@ -1,0 +1,12 @@
+:root { font: 16px/1.55 system-ui,sans-serif; background: #eef4ee; color: #17352c; }
+body { margin: 0; }
+header { padding: 1rem 6vw; background: #124437; color: white; display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+nav { display: flex; gap: 1rem; flex-wrap: wrap; }
+nav a { color: inherit; }
+main { max-width: 64rem; margin: auto; padding: 1rem; }
+h1 { max-width: 23ch; line-height: 1.15; font-size: clamp(1.7rem, 5vw, 3rem); }
+section { background: white; border: 1px solid #ccddd3; border-radius: 1rem; padding: 1rem; margin-bottom: 1rem; }
+label, button { margin: .3rem; }
+select, button { padding: .45rem; font: inherit; }
+button { background: #12604c; color: white; border: 0; border-radius: .4rem; }
+#map { height: min(52vh, 23rem); margin-top: 1rem; border-radius: .5rem; }

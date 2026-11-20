@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SJL Alerta</title>
+<header><strong>SJL Alerta</strong><nav id="session"></nav></header>
+<main>
+  <h1>Reportes ciudadanos en San Juan de Lurigancho</h1>
+  <p>Demostración académica con datos ficticios y ubicaciones aproximadas.</p>
+  <section>
+    <h2>Mapa de reportes aprobados</h2>
+    <label>Categoría <select id="category"></select></label>
+    <label>Franja <select id="slot"></select></label>
+    <div id="map" aria-label="Mapa por sector"></div>
+    <p id="total" role="status"></p><ul id="counts"></ul>
+  </section>
+  <p id="feedback" role="status"></p>
+  <section id="registration" hidden><h2>Registrar incidente</h2>
+    <form>
+      <label>Sector <select name="sector" required></select></label>
+      <label>Categoría <select name="category" required></select></label>
+      <label>Franja <select name="slot" required></select></label>
+      <button>Enviar a revisión</button>
+    </form>
+  </section>
+  <section id="moderation" hidden><h2>Moderación</h2><div id="pending"></div></section>
+</main>
+<script type="module" src="/src/main.js"></script>
+</html>

@@ -1,0 +1,11 @@
+{
+  "platform": { "apiRuntime": "node:22" },
+  "routes": [
+    { "route": "/api/moderation/*", "allowedRoles": ["moderador"] },
+    { "route": "/api/reports", "methods": ["POST"], "allowedRoles": ["authenticated"] }
+  ],
+  "globalHeaders": {
+    "X-Content-Type-Options": "nosniff",
+    "Content-Security-Policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://tile.openstreetmap.org; frame-ancestors 'none'"
+  }
+}
